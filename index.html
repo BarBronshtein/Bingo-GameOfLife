@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>My Games</title>
+  </head>
+  <body>
+    <header class="bl-dark" id="header">
+      Lets Play Some Bingo!
+      <div id="navbar">
+        <button class="bingo">Bingo</button>
+        <button onclick="changePage(this)" class="gameoflife">
+          GameOfLife
+        </button>
+      </div>
+      <div class="container">
+        <div class="modal hidden">
+          <button></button>
+          <h2></h2>
+        </div>
+        <div>
+          <div class="opponent"></div>
+          <div class="player"></div>
+          <br />
+          <br />
+          <table class="p1"></table>
+          <button class="btn-bingo">Click To Play</button>
+          <table class="p2"></table>
+        </div>
+      </div>
+    </header>
+    <div class="game2 hidden">
+      <div id="navbar">
+        <button onclick="changePage()" class="bingo">Bingo</button>
+        <button class="gameoflife">GameOfLife</button>
+      </div>
+      <h1 class="preview">Game Of Life</h1>
+      <button class="btn-gameoflife" onclick="toggleGame(this)">Play</button>
+      <table class="tablegame"></table>
+    </div>
+    <script src="src/game1.js"></script>
+    <script src="src/game2.js"></script>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #222;
+  box-sizing: border-box;
+}
+
+/* We would usually not use ids to style, it can have a conflict of power with other tags, unless in a 
+very specific scenario, you should use classes */
+#header {
+  font-size: 4rem;
+  height: 600px;
+  color: #fff;
+}
+
+#navbar {
+  font-size: 1.2rem;
+  float: right;
+  margin: 1.6rem;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: wheat;
+  border: #333 solid 1rem;
+  background-color: #333;
+}
+
+#navbar a:hover {
+  background-color: #272727;
+  border: #272727 solid 1rem;
+  color: #d8b187;
+}
+
+.gameoflife {}
+
+.container {
+  font-size: 1.6rem;
+}
+
+/* Use more descriptive names, what if you have 100 p? */
+.p1 {
+  float: left;
+}
+
+.p2 {
+  float: right;
+}
+
+table {
+  width: 45%;
+  height: 420px;
+  background-color: #333;
+}
+
+.btn-bingo {
+  margin-top: 14rem;
+  background-color: #222;
+  border: none;
+  color: violet;
+  padding-left: 1.7rem;
+}
+
+.btn-bingo:hover {
+  color: #ff61ee;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+td {
+  padding: 2rem;
+  color: purple;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+span {
+  color: rgb(137, 96, 20);
+}
+
+.opponent {
+  float: right;
+  padding-right: 20%;
+  color: peru;
+}
+
+.player {
+  color: peru;
+  padding-left: 20%;
+}

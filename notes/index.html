@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- scripts will usualy go in the bottom, right before the body tag, instead of using defer -->
+  <!-- Also, you can call the src folder "js" for now, since its just js files, the src name will come later when have have more files -->
+  <script defer src="src/game1.js"></script>
+  <title>My Games</title>
+</head>
+
+<body>
+
+  <header class="bl-dark" id="header">
+    Lets Play Some Bingo!
+    <div id="navbar">
+      <a href="index.html">Bingo</a>
+      <!-- Keep class names convention consistent, our convention is to use kebab case, like in line 14 -->
+      <a class="gameoflife" href="game2.html">GameOfLife</a>
+    </div>
+    <div class="container">
+      <div>
+        <div class="opponent"></div>
+        <div class="player"></div>
+        <br>
+        <br>
+        <table class="p1 hidden"></table>
+        <button class="btn-bingo">Click To Play</button>
+        <table class="p2 hidden"></table>
+      </div>
+    </div>
+    </div>
+  </header>
+  <div style="display: none">
+    <h1>NMew Game</h1>
+  </div>
+</body>
+
+</html>
